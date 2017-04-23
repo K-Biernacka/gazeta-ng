@@ -1,0 +1,13 @@
+<div *ngFor="let singleNews of news" class="news-item clearfix" [ngClass]="[singleNews.size]">
+
+  <div class ="picture">
+    <img [src]="singleNews.picture" />
+
+  </div>
+
+  <div class ="description">
+    {{singleNews.description}}
+
+  </div>
+
+</div>

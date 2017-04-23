@@ -1,0 +1,124 @@
+.font-one {
+  font-family: Arial;
+  color: #3c3c3c;
+}
+
+
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+
+  .header {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom-color: darkgray;
+    border-bottom-style: solid;
+    .logo {
+      float: left;
+      position: relative;
+      left: -11px;
+    }
+    .menu-right {
+      float: right;
+
+      li {
+        list-style: none;
+        float: left;
+        margin: 0px 10px;
+        text-align: center;
+
+        .glyphicon {
+          font-size: 25px;
+          display: block;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+    .menu-left {
+      float: left;
+      ul {
+        li {
+          float: left;
+          list-style: none;
+          margin: 0px 5px;
+          font-size: 14px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+
+  .page-right {
+    float: right;
+    width: 33%;
+    .new-header {
+      font-size: 23px;
+      margin-bottom: 10px;
+      font-family: "ArquitectaBook", sans-serif;
+
+    }
+    .news {
+      float: left;
+      text-align: left;
+      word-wrap: break-word;
+
+    }
+  }
+  .page-left {
+    width: 67%;
+    float: left;
+    padding-right: 15px;
+
+
+  }
+  .page-bottom {
+
+    .city {
+
+      .item-one {
+        float: left;
+        font: {
+          size: 16px;
+          weight: bold;
+        }
+        color: #232323;
+        display: inline-block;
+        text-transform: capitalize;
+        padding-top: 40px;
+
+      }
+      .item-two {
+        float: right;
+        font: {
+          size: 14px;
+          weight: normal;
+        }
+        color: #a2a2a2;
+        padding-top: 40px;
+
+      }
+
+    }
+    .weather {
+
+      img {
+        padding-top: 25px;
+      }
+    }
+    .day {
+      font: {
+        size: 16px;
+        weight: bold;
+      }
+      margin-top: 10px;
+    }
+    .name-day {
+      font-size: 14px;
+      padding-top: 30px;
+    }
+  }
+}
