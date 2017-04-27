@@ -1,5 +1,4 @@
 
-
 <div *ngFor="let singleNews of list" class="first-news clearfix">
 
 
@@ -8,7 +7,7 @@
     {{singleNews.hour}}
 
   </div>
-  <div class ="content">
+  <div routerLink="/news" class ="content">
     {{singleNews.text}}
 
   </div>
