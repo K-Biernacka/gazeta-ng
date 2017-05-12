@@ -8,6 +8,11 @@ import { AppComponent } from './app.component';
 import { PictureNewsComponent } from './picture-news/picture-news.component';
 import { ListNewsComponent } from './list-news/list-news.component';
 import { SingleArticleComponent } from './single-article/single-article.component';
+import { CommentBoxComponent } from './comment-box/comment-box.component';
+import { ScoreBoxComponent } from './score-box/score-box.component';
+import { EnterCommentComponent } from './enter-comment/enter-comment.component';
+import { CommentsListComponent } from './comments-list/comments-list.component';
+import { OneCommentComponent } from './one-comment/one-comment.component';
 
 const appRoutes: Routes = [
   { path: '', component: PictureNewsComponent },
@@ -21,7 +26,12 @@ const appRoutes: Routes = [
     AppComponent,
     PictureNewsComponent,
     ListNewsComponent,
-    SingleArticleComponent
+    SingleArticleComponent,
+    CommentBoxComponent,
+    ScoreBoxComponent,
+    EnterCommentComponent,
+    CommentsListComponent,
+    OneCommentComponent
   ],
   imports: [
     BrowserModule,
