@@ -3,15 +3,19 @@
     <div class="thumbnail">
 
       <div class="caption">
-
-        <textarea type="text" placeholder="Comment..." class="comment"></textarea>
-
-
+        <form class="form-signin" (ngSubmit)="onSubmit()">
+        <textarea type="text" placeholder="Comment..." class="comment" required [(ngModel)]="payload.comment" name="comment"></textarea>
         <p>
-          <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-          <a href="#" class="btn btn-primary" role="button">OK</a>
+          <input type="text" class="form-control" placeholder="Username" required [(ngModel)]="payload.userName" name="userName">
+          <button type="submit" class="btn btn-primary">OK</button>
         </p>
+        </form>
       </div>
     </div>
   </div>
+
+
+
+
+
 
