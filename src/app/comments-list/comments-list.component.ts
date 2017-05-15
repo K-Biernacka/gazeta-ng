@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentsListComponent implements OnInit {
 
+
+
+  get comments(): any {
+    return JSON.parse(localStorage.getItem("comments")) ;
+
+  }
+
+
+
+
   constructor() { }
 
   ngOnInit() {

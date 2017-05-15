@@ -1,11 +1,6 @@
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
-<app-one-comment></app-one-comment>
+<div *ngFor="let comment of comments">
+
+  <app-one-comment [display]="comment"></app-one-comment>
+
+
+</div>

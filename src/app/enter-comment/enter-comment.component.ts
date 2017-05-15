@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-enter-comment',
@@ -8,26 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class EnterCommentComponent implements OnInit {
 
 
-  payload={
+  payload = {
     comment: '',
     userName: ''
   };
 
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
   onSubmit() {
-  let comments: any = localStorage.getItem("comments");
+    let comments: any = localStorage.getItem("comments");
 
-  comments = JSON.parse(comments);
-  if (comments == null) {
-    comments = []
-  }
-  comments.unshift(this.payload);
-  localStorage.setItem("comments", JSON.stringify(comments));
-
+    comments = JSON.parse(comments);
+    if (comments === null) {
+      comments = []
+    }
+    comments.unshift(this.payload);
+    localStorage.setItem("comments", JSON.stringify(comments));
+    this.payload.comment = '';
+    this.payload.userName = '';
 
 
   }
