@@ -12,4 +12,9 @@ export class ScoreBoxComponent implements OnInit {
   ngOnInit() {
   }
 
+  rate = (action) => {
+    console.log(action);
+}
+
+
 }
